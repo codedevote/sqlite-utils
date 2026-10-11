@@ -1,0 +1,7 @@
+id,name,rasse,geburtsjahr,gewicht_kg,besitzer
+1,Cleo,Beagle,2018,11.5,Anna
+2,Pancakes,Mops,2020,8.2,Ben
+3,Flöckchen,Pudel,2016,6.9,Anna
+4,Rex,Schäferhund,2019,34.0,Carla
+5,Bello,Beagle,2021,,Ben
+6,Luna,Mops,2022,7.4,

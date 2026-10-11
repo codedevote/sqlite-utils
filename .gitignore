@@ -15,10 +15,10 @@ venv
 .schema
 .vscode
 .hypothesis
-.claude/
+.claude/settings.local.json
+CLAUDE.local.md
 Pipfile
 Pipfile.lock
-uv.lock
 tests/*.dylib
 tests/*.so
 tests/*.dll
