@@ -60,7 +60,7 @@ Bitte noch **keine** `CLAUDE.md` anlegen und nichts committen: Beides ist Teil d
 
 **`uv`, `git` oder `claude` wird nicht gefunden** („… wurde nicht als Name eines Cmdlet … erkannt“): Ein neues PowerShell-Fenster öffnen. Die Installationen tragen sich erst für neue Fenster in den Suchpfad ein.
 
-**`uv sync` meldet `No pyproject.toml found`:** Du bist nicht im Projektordner. Erst `cd $HOMEWorkshopsqlite-utils`.
+**`uv sync` meldet `No pyproject.toml found`:** Du bist nicht im Projektordner. Erst `cd $HOME\Workshop\sqlite-utils`.
 
 **`uv sync` meldet einen Zertifikatsfehler** (etwa `invalid peer certificate: UnknownIssuer` oder eine andere Meldung mit „certificate“): Das Firmennetz prüft verschlüsselte Verbindungen mit einem eigenen Zertifikat. uv soll dann den Zertifikatsspeicher von Windows verwenden:
 
