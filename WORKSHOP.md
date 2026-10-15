@@ -21,7 +21,11 @@ Danach ein neues PowerShell-Fenster öffnen.
 
 ## 2. Projekt klonen und prüfen
 
+Die folgenden Befehle legen in deinem Benutzerordner einen Ordner `Workshop` an, laden das Projekt dort hinein und wechseln in den Projektordner:
+
 ```powershell
+mkdir $HOME\Workshop
+cd $HOME\Workshop
 git clone https://github.com/codedevote/sqlite-utils.git
 cd sqlite-utils
 uv sync --locked
@@ -30,7 +34,19 @@ uv run pytest -q
 
 Erwartetes Ergebnis der letzten Zeile: `1496 passed, 17 skipped, 32 warnings`. Die Warnungen darüber (`DeprecationWarning` zu `isolated_filesystem`) sind normal und kein Fehler deiner Einrichtung. Danach zeigt `uv run sqlite-utils --help` die Befehle des Werkzeugs.
 
+**Wichtig: Alle Befehle laufen im Projektordner.** Ein neues PowerShell-Fenster startet aber in deinem Benutzerordner. Wechsle dann immer zuerst zurück:
+
+```powershell
+cd $HOME\Workshop\sqlite-utils
+```
+
+Du bist richtig, wenn die Zeile vor deiner Eingabe mit `\Workshop\sqlite-utils>` endet.
+
+Hast du das Projekt schon woanders hin geklont, ist das auch in Ordnung. Wechsle dann in deinen Ordner `sqlite-utils`.
+
 ## 3. Claude Code starten
+
+Im Projektordner:
 
 ```powershell
 claude
@@ -44,7 +60,7 @@ Bitte noch **keine** `CLAUDE.md` anlegen und nichts committen: Beides ist Teil d
 
 **`uv`, `git` oder `claude` wird nicht gefunden** („… wurde nicht als Name eines Cmdlet … erkannt“): Ein neues PowerShell-Fenster öffnen. Die Installationen tragen sich erst für neue Fenster in den Suchpfad ein.
 
-**`uv sync` meldet `No pyproject.toml found`:** Du bist nicht im Projektordner. Erst `cd sqlite-utils`.
+**`uv sync` meldet `No pyproject.toml found`:** Du bist nicht im Projektordner. Erst `cd $HOMEWorkshopsqlite-utils`.
 
 **`uv sync` meldet einen Zertifikatsfehler** (etwa `invalid peer certificate: UnknownIssuer` oder eine andere Meldung mit „certificate“): Das Firmennetz prüft verschlüsselte Verbindungen mit einem eigenen Zertifikat. uv soll dann den Zertifikatsspeicher von Windows verwenden:
 
