@@ -67,4 +67,4 @@ Hilft das, die Einstellung dauerhaft setzen und danach ein neues Fenster öffnen
 
 **Statt `manual mode on` steht ein anderer Modus:** Firmenvorgaben gehen vor die Projekteinstellung. Für die Vorbereitung ist das kein Problem, bitte melde es trotzdem.
 
-Wenn ein Schritt fehlschlägt, schick die Fehlermeldung vorab in den Team-Kanal.
+Wenn ein Schritt fehlschlägt, schick die Fehlermeldung vorab per Microsoft Teams an die Workshopleitung.
